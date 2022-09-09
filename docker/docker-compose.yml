@@ -7,7 +7,7 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 172.20.0.0/24
+        - subnet: 172.3.0.0/24
   api-db: null
   redis: null
   mesh-db: null
@@ -193,7 +193,7 @@ services:
       CERT_PRIV_KEY: ${CERT_PRIV_KEY}
     networks:
       proxy:
-        ipv4_address: 172.20.0.20
+        ipv4_address: 172.3.0.20
     ports:
       - "80:8080"
       - "443:4443"
